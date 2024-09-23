@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <header class="portfolio-header">
+            <h4>Bakery</h4>
+            <p><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+        </header>
+        <main class="portfolio-content">
+            <section class="portfolio-item">
+                <div class="image-container">
+                    <img src="./assets/images/banana crepe.webp" alt="Banana Crepe">
+                    <div class="overlay">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h4>Banana Crepe</h4>
+                    <p><em>Lorem ipsum</em></p>
+                </div>
+            </section>
+            <section class="portfolio-item">
+                <div class="image-container">
+                    <img src="./assets/images/san sebastian.jpg" alt="San Sebastian">
+                    <div class="overlay">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h4>San Sebastian</h4>
+                    <p><em>Lorem ipsum</em></p>
+                </div>
+            </section>
+            <section class="portfolio-item">
+                <div class="image-container">
+                    <img src="./assets/images/nutella crepe.webp" alt="Nutella Cheesecake">
+                    <div class="overlay">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h4>Nutella Cheesecake</h4>
+                    <p><em>Lorem ipsum</em></p>
+                </div>
+            </section>
+            <section class="portfolio-item">
+                <div class="image-container">
+                    <img src="./assets/images/Tiramisu.jpg" alt="Tiramisu">
+                    <div class="overlay">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h4>Tiramisu</h4>
+                    <p><em>Lorem ipsum</em></p>
+                </div>
+            </section>
+            <section class="portfolio-item">
+                <div class="image-container">
+                    <img src="./assets/images/panna cotta.webp" alt="Panna Cotta">
+                    <div class="overlay">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h4>Panna Cotta</h4>
+                    <p><em>Lorem ipsum</em></p>
+                </div>
+            </section>
+            <section class="portfolio-item">
+                <div class="image-container">
+                    <img src="./assets/images/cheesecake.jpg" alt="Cheesecake">
+                    <div class="overlay">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h4>Cheesecake</h4>
+                    <p><em>Lorem ipsum</em></p>
+                </div>
+            </section>
+
+            <div class="modal" id="projectModal">
+                <div class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></div>
+                <div class="modal-content">
+                    <div class="modal-image">
+                        <img id="modalPhoto" src="" alt="">
+                    </div>
+                    <div class="modal-description">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p><strong>Client:</strong> <span id="modalProductName"></span></p>
+                        <p><strong>Category:</strong> <span id="modalProductCaption"></span></p>
+                        <button class="button" type="button" onclick="closeModal()">
+                            <i class="fa-solid fa-xmark"></i>
+                            CLOSE PROJECT
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
